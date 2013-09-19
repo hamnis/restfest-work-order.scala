@@ -15,7 +15,7 @@ case class WorkOrder(_type: URI, input: JValue, start: Option[URI], status: Opti
       "type" -> _type.toString, 
       "input" -> input, 
       "start" -> start.map(href), 
-      "status" -> start.map(href), 
+      "status" -> status.map(href), 
       "complete" -> complete.map(href), 
       "fail" -> fail.map(href)
     )
